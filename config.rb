@@ -16,7 +16,7 @@ activate :blog do |blog|
 
   blog.default_extension = ".md"
 
-  # blog.calendar_template = "calendar.html"
+  blog.calendar_template = "calendar.html"
   blog.tag_template = "tag.html"
 
   blog.paginate = false
