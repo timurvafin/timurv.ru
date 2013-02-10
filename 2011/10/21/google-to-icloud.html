@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>Полностью переехал с Google Calendar  & Contacts на iCloud</title>
+     <meta name="author" content="Timur Vafin" />
+     <link href="http://feeds.feedburner.com/timurv/blog" rel="alternate" title="Timur Vafin" type="application/atom+xml" />
+
+     <!-- syntax highlighting CSS -->
+     <link href="../../../stylesheets/syntax.css?1360529135" media="screen" rel="stylesheet" type="text/css" />
+
+     <!-- Homepage CSS -->
+     <link href="../../../stylesheets/screen.css?1360529135" media="screen, projection" rel="stylesheet" type="text/css" />
+
+     <script type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-6069031-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
+  </head>
+
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">Тимур Вафин, Блог</a>
+        <a class="extra" href="/">начало</a>
+      </div>
+
+        <div id="post">
+    <h1>Полностью переехал с Google Calendar  & Contacts на iCloud</h1>
+
+    <div class="meta">
+      <span class="date-created">
+  21 Окт 2011
+</span>
+
+      <span class="tags">
+  <a href="/tags/google.html">Google</a>
+</span>
+
+    </div>
+    <div class="clear"></div>
+
+    <p>С выходом iCloud попробовал использовал для синхронизации календарей и адресной книги. До этого контакты и календари синхронизировались с гуглом, что в принципе очень удобно. В iCloud привлекает интеграция, к примеру, высылка приглашений на встречи, созданные в календаре, которые приглашенный может принять зайдя на сайтик iCloud.</p>
+
+<p>На Маках и iPad нужно было просто обновится, чтобы начать использовать. А вот для айфончик обновлять нельзя без jailbreak и анлока. Оказалось, что контакты и календари можно подключить по CardDav и CalDav соответственно и все начинает работать замечательно.</p>
+
+<p>Заходим на телефоне в &#8220;Настройки&#8221; &#8594; &#8220;Mail, Контакты, Календари&#8221; &#8594; &#8220;Добавить&#8230;&#8221; &#8594; &#8220;Другое&#8221;:</p>
+
+<ul>
+<li>
+<p>для адресной книги &#8220;Учетная запись CardDav&#8221;</p>
+
+<ul>
+<li>Сервер: https://p02-contacts.icloud.com:443/<strong><span>uniqueid</span></strong>/carddavhome</li>
+
+<li>Пользователь: зарегистрированный пользователь iCloud</li>
+
+<li>Пароль: пароль зарегистрированного пользователя iCloud</li>
+</ul>
+</li>
+
+<li>
+<p>для адресной книги &#8220;Учетная запись CalDav&#8221;</p>
+
+<ul>
+<li>Сервер: https://p02-caldav.icloud.com:443/<strong><span>uniqueid</span></strong>/principal</li>
+
+<li>Пользователь: зарегистрированный пользователь iCloud</li>
+
+<li>Пароль: пароль зарегистрированного пользователя iCloud</li>
+</ul>
+</li>
+</ul>
+
+<p>Вместо <strong><span>uniqueid</span></strong> нужно подставить число, который найдете на своем маке в файлике <code>~/Library/Application Support/AddressBook/Sources/[iCloud Account ID]/Configuration.plist</code> примерно в такой строчке <code>https://me%40timurv.ru@p02-contacts.icloud.com:443/**[uniqueid]**/mm/push/register</code></p>
+
+<p>Пока все хорошо, единственный минус, в Gmail не будет актуальной адресной книги. Почему то нельзя синхронизировать контакты и с iCould и с Google.</p>
+  </div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'timurv'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+    <div id="related">
+    <h2>Другие посты</h2>
+    <ul class="posts">
+      
+        <li>
+          <span>31 Авг 2010</span> &raquo;
+          <a href="/2010/08/31/google-mail-labs.html">Google mail labs I use every day</a>
+        </li>
+      
+    </ul>
+  </div>
+
+
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Тимур Вафин<br />
+            Партнер в <a href="http://flatstack.com/">FlatStack</a><br />
+            me@timurv.ru
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="http://twitter.com/timurv/">twitter.com/timurv</a><br />
+            <a href="http://flickr.com/photos/timurv/">flickr.com/photos/timurv</a><br />
+            Skype: timur.vafin
+          </p>
+        </div>
+        <div class="rss">
+          <a href="http://feeds.feedburner.com/timurv/blog">
+            <img alt="Subscribe to RSS Feed" width="63" height="62" src="../../../images/rss.png?1360529135" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="http://flatstack.com">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" alt="" width="149" height="149" src="../../../images/flatstack.png?1360529135" />
+    </a>
+  </body>
+</html>

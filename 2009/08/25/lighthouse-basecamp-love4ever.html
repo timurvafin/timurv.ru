@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>Lighthouse+Basecamp=Love4ever</title>
+     <meta name="author" content="Timur Vafin" />
+     <link href="http://feeds.feedburner.com/timurv/blog" rel="alternate" title="Timur Vafin" type="application/atom+xml" />
+
+     <!-- syntax highlighting CSS -->
+     <link href="../../../stylesheets/syntax.css?1360529135" media="screen" rel="stylesheet" type="text/css" />
+
+     <!-- Homepage CSS -->
+     <link href="../../../stylesheets/screen.css?1360529135" media="screen, projection" rel="stylesheet" type="text/css" />
+
+     <script type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-6069031-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
+  </head>
+
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">Тимур Вафин, Блог</a>
+        <a class="extra" href="/">начало</a>
+      </div>
+
+        <div id="post">
+    <h1>Lighthouse+Basecamp=Love4ever</h1>
+
+    <div class="meta">
+      <span class="date-created">
+  25 Авг 2009
+</span>
+
+      <span class="tags">
+  
+</span>
+
+    </div>
+    <div class="clear"></div>
+
+    <p>In our daily work we usually use <a href='http://basecamphq.com'>Basecamp</a> for communication on projects and <a href='http://lighthouseapp.com'>Lighthouse</a> for tasks &amp; bugs tracking. I&#8217;m sure you know how BC and LH rocks, so I will tell you how to integrate BC &#8220;time tracking feature&#8221; with LH tickets.</p>
+
+<p>We have created a simple ruby script for integrating BC into LH using their APIs - so here is <a href='https://github.com/fs/lh2bc'>lh2bc ruby gem</a>. Lh2Bc creates projects and tickets created in LH as to-do lists and to-do items in the BC accordingly, so you can track work time in the BC&#8217;s to-dos in a simple way.</p>
+
+<h2 id='lh2bc_can'>Lh2Bc can:</h2>
+
+<ul>
+<li>create new BC to-do lists, when new LH projects appears</li>
+
+<li>create new BC to-do items, when new LH tickets appears</li>
+
+<li>mark as completed BC to-do item if LH ticket is closed</li>
+
+<li>associate BC user with LH user</li>
+</ul>
+
+<h2 id='how_to_use'>How to use</h2>
+
+<ul>
+<li>If you being a developer spend some time working on some ticket, just specify these hours in the associated BC to-do item.</li>
+
+<li>Various developers can specify hours for the same ticket.</li>
+
+<li>At the end of the week you can create BC time report and find who is the best rock star in your company for this week :)</li>
+</ul>
+
+<h2 id='installation'>Installation</h2>
+
+<ul>
+<li>Install gem from github.com <code>sudo gem install fs-lh2bc -s https://gems.gihub.com</code></li>
+
+<li>setup Lighthouse and Basecamp sections in the config.yml</li>
+
+<li>setup association between LH and BC users in the users.yml</li>
+
+<li>you can find sample configuration files in the gem source code</li>
+
+<li>start lh2bc script with following arguments: <code>lh2bc -c /path/to/your/config.yml -u /path/to/your/users.yml --verbose</code></li>
+
+<li>if everything is OK, they you can add daily cron job with lh2bc command.</li>
+</ul>
+  </div>
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'timurv'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+  
+
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Тимур Вафин<br />
+            Партнер в <a href="http://flatstack.com/">FlatStack</a><br />
+            me@timurv.ru
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="http://twitter.com/timurv/">twitter.com/timurv</a><br />
+            <a href="http://flickr.com/photos/timurv/">flickr.com/photos/timurv</a><br />
+            Skype: timur.vafin
+          </p>
+        </div>
+        <div class="rss">
+          <a href="http://feeds.feedburner.com/timurv/blog">
+            <img alt="Subscribe to RSS Feed" width="63" height="62" src="../../../images/rss.png?1360529135" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="http://flatstack.com">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" alt="" width="149" height="149" src="../../../images/flatstack.png?1360529135" />
+    </a>
+  </body>
+</html>
