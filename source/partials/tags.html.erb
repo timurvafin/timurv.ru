@@ -1,0 +1,3 @@
+<% blog.tags.each do |tag, articles| %>
+  <%= link_to(tag, tag_path(tag)) %>
+<% end %>

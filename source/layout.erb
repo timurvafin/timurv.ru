@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title><%= title %></title>
+     <meta name="author" content="Timur Vafin" />
+     <link href="http://feeds.feedburner.com/timurv/blog" rel="alternate" title="Timur Vafin" type="application/atom+xml" />
+
+     <!-- syntax highlighting CSS -->
+     <%= stylesheet_link_tag 'syntax' %>
+
+     <!-- Homepage CSS -->
+     <%= stylesheet_link_tag 'screen', media: 'screen, projection' %>
+
+     <script type="text/javascript">
+       var _gaq = _gaq || [];
+       _gaq.push(['_setAccount', 'UA-6069031-1']);
+       _gaq.push(['_trackPageview']);
+
+       (function() {
+         var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+       })();
+     </script>
+  </head>
+
+  <body>
+    <div class="site">
+      <div class="title">
+        <a href="/">Тимур Вафин, Блог</a>
+        <a class="extra" href="/">начало</a>
+      </div>
+
+      <%= yield %>
+
+      <div class="footer">
+        <div class="contact">
+          <p>
+            Тимур Вафин<br />
+            Партнер в <a href="http://flatstack.com/">FlatStack</a><br />
+            me@timurv.ru
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            <a href="http://twitter.com/timurv/">twitter.com/timurv</a><br />
+            <a href="http://flickr.com/photos/timurv/">flickr.com/photos/timurv</a><br />
+            Skype: timur.vafin
+          </p>
+        </div>
+        <div class="rss">
+          <a href="http://feeds.feedburner.com/timurv/blog">
+            <%= image_tag 'rss.png', alt: 'Subscribe to RSS Feed' %>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="http://flatstack.com">
+      <%= image_tag 'flatstack.png', style: 'position: absolute; top: 0; right: 0; border: 0;' %>
+    </a>
+  </body>
+</html>

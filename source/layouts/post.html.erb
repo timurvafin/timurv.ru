@@ -1,0 +1,16 @@
+<% wrap_layout :layout do %>
+  <div id="post">
+    <h1><%= current_page.data.title %></h1>
+
+    <div class="meta">
+      <%= partial 'partials/post/date' %>
+      <%= partial 'partials/post/tags' %>
+    </div>
+    <div class="clear"></div>
+
+    <%= yield %>
+  </div>
+
+  <%= partial 'partials/post/disqus' %>
+  <%= partial 'partials/post/related' %>
+<% end %>
