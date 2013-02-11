@@ -1,4 +1,5 @@
 require "lib/tag_cloud"
+require "lib/flickr"
 
 module BlogHelpers
   def title
@@ -26,5 +27,13 @@ module BlogHelpers
         html << link_to(tag, tag_path(tag), style: "font-size: #{size}#{unit}")
       end
     end.join(" ")
+  end
+
+  def flickr_photo(*photo_ids)
+    Flickr::Renderer.new(Flickr::Fetcher.new.by_photo_ids(photo_ids)).render
+  end
+
+  def flickr_set(set_id)
+    Flickr::Renderer.new(Flickr::Fetcher.new.by_set_id(set_id)).render
   end
 end
