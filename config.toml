@@ -7,8 +7,8 @@ theme = "coder"
     author = "Timur Vafin"
     description = "Timur's personal website"
 
-    hideCredits = false
-    hideCopyright = false
+    hideCredits = true
+    hideCopyright = true
 
 # Social links
 [[params.social]]
