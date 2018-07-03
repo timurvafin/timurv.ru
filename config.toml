@@ -25,3 +25,8 @@ theme = "coder"
     name = "LinkedIn"
     weight = 1
     url = "https://ru.linkedin.com/in/timurv"
+
+[[params.social]]
+    name = "Telegram"
+    weight = 1
+    url = "https://t.me/joinchat/AAAAAEGtZASR8bz7GxQzlg"
