@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://timurv.ru/categories/</loc>
+    <loc>https://timurv.ru/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://timurv.ru/tags/</loc>
+    <loc>https://timurv.ru/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://timurv.ru/</loc>
+    <loc>https://timurv.ru/</loc>
     <priority>0</priority>
   </url>
   
