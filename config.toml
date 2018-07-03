@@ -1,0 +1,27 @@
+baseURL = "http://timurv.ru/"
+languageCode = "en-us"
+title = "Timur Vafin"
+theme = "coder"
+
+[params]
+    author = "Timur Vafin"
+    description = "Timur's personal website"
+
+    hideCredits = true
+    hideCopyright = false
+
+# Social links
+[[params.social]]
+    name = "E-mail"
+    weight = 1
+    url = "mailto:me@timurv.ru"
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/timurvafin/"
+
+[[params.social]]
+    name = "LinkedIn"
+    weight = 1
+    url = "https://ru.linkedin.com/in/timurv"
