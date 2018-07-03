@@ -1,4 +1,4 @@
-baseURL = "http://timurv.ru/"
+baseURL = "https://timurv.ru/"
 languageCode = "en-us"
 title = "Timur Vafin"
 theme = "coder"
@@ -7,7 +7,7 @@ theme = "coder"
     author = "Timur Vafin"
     description = "Timur's personal website"
 
-    hideCredits = true
+    hideCredits = false
     hideCopyright = false
 
 # Social links
